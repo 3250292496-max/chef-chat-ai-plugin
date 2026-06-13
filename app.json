@@ -1,0 +1,24 @@
+{
+  "author": "想成为作家的厨师",
+  "compatible_svn": 190,
+  "info": "全新 AI 聊天插件，支持 DeepSeek、OpenAI 和其他 OpenAI 兼容 API；提供独立 API 设置、人设设置、回复风格、活人感回复、资料库检索、网络眼睛、网页检索/抓取分析、RSS 新闻正文、情绪图片、视觉识图、表情包库、群聊自然插话、低频自动偷图、本地指令、导入导出、上下文记忆和全局保存。",
+  "menu_config": [
+    {
+      "event": "ChefChatAI_menu",
+      "title": "厨师聊天AI设置"
+    }
+  ],
+  "message_mode": "old_string",
+  "name": "厨师聊天AI插件",
+  "namespace": "ChefChatAI",
+  "priority": 10060,
+  "support": [
+    {
+      "model": "all",
+      "platform": "all",
+      "sdk": "all"
+    }
+  ],
+  "svn": 45,
+  "version": "1.16.3"
+}
