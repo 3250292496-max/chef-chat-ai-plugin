@@ -1,1 +1,1 @@
-/home/oai/share/plugin_extract/config.py
+/home/oai/share/plugin_update_extract/config.py
