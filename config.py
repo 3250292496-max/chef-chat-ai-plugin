@@ -1,0 +1,1 @@
+/home/oai/share/plugin_extract/config.py
