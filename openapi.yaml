@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  title: ChefChatAI API
+  description: |
+    这是为厨师聊天AI插件准备的简易 API 规范。API 提供的端点只是插件功能的示例，主要用于第三方集成。
+  version: "1.0.0"
+servers:
+  - url: https://example.com
+paths:
+  /chat:
+    post:
+      summary: 向模型发送聊天消息
+      operationId: chatWithModel
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question:
+                  type: string
+                  description: 用户的提问或信息
+              required:
+                - question
+      responses:
+        "200":
+          description: 模型的回复
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  answer:
+                    type: string
+                    description: 模型返回的回复文本
+  /config/providers:
+    get:
+      summary: 获取内置模型提供商预设列表
+      operationId: listProviders
+      responses:
+        "200":
+          description: 模型提供商信息
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  providers:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        base_url:
+                          type: string
+                        model:
+                          type: string
+                        hint:
+                          type: string
+  /config/version:
+    get:
+      summary: 获取插件配置版本号
+      operationId: getConfigVersion
+      responses:
+        "200":
+          description: 配置版本号
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  config_version:
+                    type: integer
