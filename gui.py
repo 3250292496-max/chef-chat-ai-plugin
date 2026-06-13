@@ -1,1 +1,1 @@
-/home/oai/share/plugin_extract/gui.py
+/home/oai/share/plugin_update_extract/gui.py
