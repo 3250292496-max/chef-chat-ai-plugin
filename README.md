@@ -1,3 +1,9 @@
-# ChefChatAI OlivOS Plugin
+# ChefChatAI
 
-OlivOS / OlivaDice AI 聊天插件，支持 OpenAI 兼容接口、资料库检索、联网搜索、RSS 新闻、视觉识图和上下文记忆。
+This repository contains the `ChefChatAI.opk` file. It was generated for demonstration purposes and is meant to be pushed to GitHub by the end user.
+
+## Contents
+
+- `ChefChatAI.opk`: The original file provided by the user.
+
+You can clone this repository and push it to your GitHub account.
