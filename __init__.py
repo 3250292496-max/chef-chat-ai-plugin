@@ -1,2 +1,1 @@
-# -*- coding: utf-8 -*-
-from . import main
+/home/oai/share/plugin_update_extract/__init__.py
