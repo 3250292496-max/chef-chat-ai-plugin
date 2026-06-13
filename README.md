@@ -1,9 +1,36 @@
-# ChefChatAI
+# 厨师聊天AI插件
 
-This repository contains the `ChefChatAI.opk` file. It was generated for demonstration purposes and is meant to be pushed to GitHub by the end user.
+## 简介
 
-## Contents
+厨师聊天AI插件是一个基于 OlivOS/OlivaDice 平台重写的 AI 聊天插件，支持 DeepSeek、OpenAI、DashScope 通义千问、智谱 GLM、Kimi/Moonshot 等多种 OpenAI 兼容接口。插件提供可视化设置、人物人设维护、多种回复风格、资料库检索、网页搜索、RSS 新闻读取、情绪图片展示、视觉识图、群聊自然插话、低频自动偷图、本地指令、导入导出以及上下文记忆等功能，使机器人回复更自然、生动。
 
-- `ChefChatAI.opk`: The original file provided by the user.
+## 功能亮点
 
-You can clone this repository and push it to your GitHub account.
+- **多模型接口**：内置多家提供商预设，可自由配置 base_url、模型名称和密钥。
+- **资料库检索**：支持导入 txt、md、json、csv、docx 等文件，插件自动切分、索引，在回复中注入相关内容，可用于模组设定、世界观设定、人物资料等。
+- **环境感知**：可选注入当前日期时间和运行环境摘要。
+- **新闻与网页搜索**：内置 RSS 新闻抓取，当用户询问新闻、热点、头条时，自动抓取并摘要相关新闻；支持网页检索/抓取公开网页内容。
+- **情绪图片与表情包库**：根据 AI 回复的情绪自动发送本地图片；可自动识别群友图片并加入表情包库。
+- **活人感回复与自然插话**：支持分条发送、停顿符、概率控制，使回复节奏更像真人；群聊中根据情绪和触发词自然插话。
+- **人设维护与多风格回复**：可在设置页维护 AI 人设和资料库，选择简短群聊、详细设定或创作润色等回复风格。
+- **导入导出与 API 管理**：API、人设、资料库、聊天配置分别保存，支持单独导入/导出和全局保存。
+
+## OpenAI 插件 API
+
+本仓库还提供了用于第三方集成的简单 API（非完整功能），遵循 [OpenAPI 规范](openapi.yaml)。主要端点包括：
+
+- `POST /chat`：向 AI 模型发送问题，返回回复文本。
+- `GET /config/providers`：获取可用模型提供商预设列表。
+- `GET /config/version`：获取插件配置的版本号。
+
+OpenAI 插件元数据请参阅 [`ai-plugin.json`](ai-plugin.json)。
+
+## 使用方法
+
+1. 将 `.opk` 文件解压至 OlivOS 平台的 `plugin` 目录下，然后根据自己的需要调整 `plugin.json` 和 `app.json` 等文件。
+2. 在 OlivOS 中启用插件后，通过菜单 “厨师聊天AI设置” 填写 API Key、模型名称、温度、回复风格等参数。
+3. 根据需要导入资料库文件、添加情绪图片、调整活人感和插话概率。
+
+## License
+
+请根据实际情况在此处补充许可协议说明。
