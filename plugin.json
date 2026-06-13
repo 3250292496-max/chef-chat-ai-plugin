@@ -1,0 +1,10 @@
+{
+  "api": "1.0.0",
+  "author": "想成为作家的厨师",
+  "description": "独立重写的 OpenAI 兼容 AI 聊天插件，带可视化设置、人设维护、回复风格、活人感回复、资料库检索、网络眼睛、网页检索/抓取分析、RSS 新闻正文、情绪图片、视觉识图、表情包库、群聊自然插话、低频自动偷图、本地指令和上下文记忆。",
+  "id": "com.codex.chefchatai",
+  "main": "main.py",
+  "name": "厨师聊天AI插件",
+  "type": "oliv_dice_plugin",
+  "version": "1.16.3"
+}
